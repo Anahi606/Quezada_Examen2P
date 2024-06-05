@@ -6,6 +6,8 @@
     <FlexLayout Direction="Column"
                 AlignItems="Center"
                 JustifyContent="Center">
+        <Image Source="chayannemini.png"
+               HeightRequest="200" />
         <Entry x:Name="inputEntry"
                Placeholder="Ingrese una cadena de caracteres"
                FontSize="18"

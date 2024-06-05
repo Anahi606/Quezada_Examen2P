@@ -34,9 +34,13 @@ public partial class AQControlDeUsuario : ContentPage
                 { 
                     conteoMayuscula++;
                 }
+                if ("aeiou".Contains(char.ToLower(c)))
+                {
+                    conteoVocal++;
+                }
             }
         }
-
+        resultadoLabel.Text = $"Letras: {conteoLetra}\nNumeros: {conteoDigito}\nMayusculas: {conteoMayuscula}\nMiniuscula: {conteoMinuscula}\nVocales: {conteoVocal}\nTotal: {conteoTotal}";
     }
 
     private void btnLimpiar_Clicked(object sender, EventArgs e)
