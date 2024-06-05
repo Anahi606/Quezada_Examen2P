@@ -19,11 +19,11 @@ public partial class AQControlDeUsuario : ContentPage
 
         foreach (char c in input)
         {
-            if(char .IsDigit(c))
+            if (char.IsDigit(c))
             {
                 conteoDigito++;
             }
-            else if (char .IsDigit(c))
+            else if (char.IsLetter(c))
             {
                 conteoLetra++;
                 if (c.ToString().ToLower() == c.ToString())
@@ -45,6 +45,7 @@ public partial class AQControlDeUsuario : ContentPage
 
     private void btnLimpiar_Clicked(object sender, EventArgs e)
     {
-
+        inputEntry.Text = String.Empty;
+        resultadoLabel.Text= String.Empty;
     }
 }
