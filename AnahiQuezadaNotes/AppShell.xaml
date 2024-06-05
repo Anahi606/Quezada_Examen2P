@@ -16,5 +16,9 @@
             Title="About"
             ContentTemplate="{DataTemplate views:AQAboutPage}"
             Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
+        <ShellContent
+            Title="Conteo"
+            ContentTemplate="{DataTemplate views:AQControlDeUsuario}"
+            Icon="{OnPlatform 'conteo.png', iOS='conteo.png', MacCatalyst='conteo.png'}" />
     </TabBar>
 </Shell>
